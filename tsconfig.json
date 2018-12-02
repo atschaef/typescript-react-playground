@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "outDir": "dist/",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "module": "esnext",
+    "jsx": "preserve",
+    "target": "es2017",
+    "moduleResolution": "node",
+    "typeRoots": ["node_modules/@types", "src/types"],
+    "lib": ["ES6", "ES2016", "DOM", "DOM.Iterable", "ScriptHost", "esnext.asynciterable"],
+    "pretty": true
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "useBabel": true,
+    "useCache": true
+  },
+  "include": ["src/**/*", "test/**/*"],
+  "exclude": [".circleci", ".storybook", "build", "coverage", "dist", "node_modules"]
+}

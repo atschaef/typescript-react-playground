@@ -1,0 +1,30 @@
+{
+  "plugins": [
+    ["babel-plugin-styled-components", { "displayName": false, "minify": false }],
+    "lodash",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-syntax-dynamic-import",
+    "jsx-control-statements"
+  ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false,
+        "targets": {
+          "browsers": ["> 1%", "last 2 versions"]
+        }
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "only": ["build", "src", "test/unit", ".storybook"],
+  "env": {
+    "karma": {
+      "presets": [
+        ["@babel/preset-env", { "targets": { "browsers": ["last 1 Chrome versions"] } }],
+        "@babel/preset-react"
+      ]
+    }
+  }
+}

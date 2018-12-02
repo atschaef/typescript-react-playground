@@ -1,0 +1,17 @@
+# Logs
+*.log
+
+/.idea
+/.vscode
+
+# Dependency directories
+/node_modules
+
+# Build
+/.awcache*
+/coverage
+/dist
+/storybook-static
+
+# Private info
+.env.*
